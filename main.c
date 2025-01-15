@@ -8,7 +8,7 @@ float division(float a, float b);
 
 int main(){
     char exitC= 'N';
-    char choix=[25];
+    char choix[25];
     float premierChiffre=0.0;
     float deuxiemeChiffre =0.0;
     float temp=0.0;
@@ -19,9 +19,9 @@ int main(){
     
     do{
         printf("voullez vous quitter [Y][N] \n");
-        scanf("%d" &exitC);
+        scanf("%c" &exitC);
     }
-    while (exitC!='Y')
+    while (exitC!='Y');
     {
         printf("que voulez-vous faire ?\n addition, soustraction , multiplication , division , par defaut vous pourrez quitter \n ");
         scanf("%s" &choix);
@@ -40,7 +40,7 @@ int main(){
             break;
         default:
             printf("voullez vous quitter [Y][N] \n");
-            scanf("%s" &exitC);
+            scanf("%c" &exitC);
             break;
         }
         
@@ -49,13 +49,13 @@ int main(){
 }
 float addition(float a,float b){
     float res= a+b;
-    return res
+    return res;
 }
 float multiplication(float a ,float b){
     float res=a*b;
-    return res 
+    return res ;
 }
 float division(float a, float b){
     float res =a/b;
-    return res 
+    return res ;
 }
