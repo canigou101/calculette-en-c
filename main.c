@@ -7,7 +7,7 @@ float division(float a, float b);
 
 
 int main(){
-    char exitC= 'N';
+    char exitC='N';
     char choix[25];
     float premierChiffre=0.0;
     float deuxiemeChiffre =0.0;
@@ -29,7 +29,7 @@ int main(){
         {
         case addition :
             printf("donneez le premier chiffre");
-            scanf("%f" &premierChiffre);
+            scanf("%f" &atof(premierChiffre));
             printf("donneez le deuxième chiffre");
             scanf("%f" &deuxiemeChiffre);
             temp=addition(float premierChiffre,float deuxiemeChiffre);
