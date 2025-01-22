@@ -1,10 +1,10 @@
-ma_calculatrice :main.o  verif_saisie.o
-		gcc -o ma_calculatrice main.o verif_saisie.o
+ma_calculatrice :main.o  fonc.o
+		gcc -o ma_calculatrice main.o fonc.o
 
 main.o: main.c
 		gcc -c main.c 
-verif_saisie.o : verif_saisie.c
-		gcc -c verif_saisie.c
+fonc.o : fonc.c
+		gcc -c fonc.c
 clean:
 	  	del /f /q *.o
 run :
