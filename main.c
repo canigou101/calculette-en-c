@@ -51,8 +51,7 @@ int main(){
             printf("%f", temp);
             break;
         default:
-            printf("voullez vous quitter [y][n] \n");
-            scanf("%c", &exitC);
+        
             break;
         }
         
